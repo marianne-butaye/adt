@@ -1,4 +1,4 @@
-package ca.ulaval.glo4002.adt;
+package ca.ulaval.glo4002.adt.applicationservice;
 
 public class ServiceAlreadyRegisteredException extends RuntimeException {
 	public <T> ServiceAlreadyRegisteredException(Class<T> contract) {

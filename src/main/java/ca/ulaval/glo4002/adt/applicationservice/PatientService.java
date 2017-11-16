@@ -1,17 +1,16 @@
-package ca.ulaval.glo4002.adt.service;
+package ca.ulaval.glo4002.adt.applicationservice;
 
 import java.util.Collection;
 
-import ca.ulaval.glo4002.adt.ServiceLocator;
 import ca.ulaval.glo4002.adt.domain.Patient;
 import ca.ulaval.glo4002.adt.domain.PatientRepository;
 import ca.ulaval.glo4002.adt.persistence.HibernatePatientRepository;
 
-public class ApplicationService {
+public class PatientService {
 
   private PatientRepository patientRepository;
 
-  public ApplicationService() {
+  public PatientService() {
     this.patientRepository = ServiceLocator.INSTANCE.resolve(HibernatePatientRepository.class);
   }
 

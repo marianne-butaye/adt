@@ -3,17 +3,17 @@ package ca.ulaval.glo4002.adt.ui;
 import java.util.Collection;
 import java.util.Scanner;
 
-import ca.ulaval.glo4002.adt.ServiceLocator;
+import ca.ulaval.glo4002.adt.applicationservice.PatientService;
+import ca.ulaval.glo4002.adt.applicationservice.ServiceLocator;
 import ca.ulaval.glo4002.adt.domain.Patient;
-import ca.ulaval.glo4002.adt.service.ApplicationService;
 
 public class ConsoleUI {
 
   private Scanner scanner;
-  private ApplicationService applicationService;
+  private PatientService applicationService;
 
   public ConsoleUI() {
-    this.applicationService = ServiceLocator.INSTANCE.resolve(ApplicationService.class);
+    this.applicationService = ServiceLocator.INSTANCE.resolve(PatientService.class);
     try (Scanner scanner = new Scanner(System.in)) {
       this.scanner = scanner;
       startCommandPromptLoop();

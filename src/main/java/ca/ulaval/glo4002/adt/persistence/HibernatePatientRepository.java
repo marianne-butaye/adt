@@ -5,7 +5,7 @@ import java.util.Collection;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
-import ca.ulaval.glo4002.adt.ServiceLocator;
+import ca.ulaval.glo4002.adt.applicationservice.ServiceLocator;
 import ca.ulaval.glo4002.adt.domain.Patient;
 import ca.ulaval.glo4002.adt.domain.PatientRepository;
 
